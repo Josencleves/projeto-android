@@ -1,0 +1,116 @@
+https://www.youtube.com/watch?v=Zju-c3YWgSg&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=34
+
+
+Site util para planejar e visualizar a estrutura do site
+
+https://mockflow.com/
+
+
+Salvando as cores escolhidas com root
+Ex:
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+
+no CSS
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+}
+quando pesquisar "color" ou "background-Color", ao final d lista estará as cores selecionadas. além de facilitar o preenchimento, ainda é possível mudar as cores alterando o quadrado colorido de forma prática.
+
+Também podemos salvar no "root", as fonte que serão utilizadas
+Ex:
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: "android";
+    src: url(./fontes/idroid.otf);
+}
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    
+    --fonte-padrao: Arial, Verdana, Helvetica, san-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'android', cursive;
+}
+body{
+    background-color:var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+header >h1{
+    color:var(--cor5);
+    font-family: var(--fonte-destaque);
+}
+main h1{
+    color:var(--cor5);
+    font-family: var(--fonte-android);
+}
+main h2{
+    color:var(--cor5);
+    font-family: var(--fonte-android);
+}
+
+--------------------------------------------------------------
+
+Podemos definir os limites maximos e minimos de telas utlizando:
+
+min-width: 280px;
+max-width: 800px;
+
+limite mínimo que as letras e as imagens rão se ajustar.
+limite máximo que a tela pode expandir. Depois disso bordas irão se formar, mantendo textos e imagens respeitando o limite imposto.
+
+Para centralizar uma imagem, não basta inseerir "margin: auto;", é preciso também acrescentar um "display: block;" pois imagem não vem "block" por padrão.
+Ex:
+.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+-------------------------------------------------------------
+
+
+
+
+Compreendendo a diferênça.
+Ex:
+main > p = siginifica que "p" é filho de "main".
+main p = significa que "p" é descendente de "main" em qualquer nível.
+
+Espaçamento entre as linha.
+line-height: 1em;
+
+Outra forma de fazer gradient
+background-image: linear-gradient(to right, var(--cor1), transparent);
+--------------------------------------------------------------
+
+
+
+
+FOOTER
+
+https://www.youtube.com/watch?v=pdomr7thueI&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=41
+
+Margem negativa faz faz a caixa vazar
+
+--------------------------------------------------------------
+
+VIDEO
+https://www.youtube.com/watch?v=u9NE0jInb_c&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=42
+
